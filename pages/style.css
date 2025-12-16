@@ -24,24 +24,22 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2.8em; /* slightly larger */
   color: lightblue;
 }
 
-.dropdowns {
+.nav-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin-bottom: 30px;
 }
 
-.dropdown button {
-  background-color: lightblue;
-  color: black;
-  border: none;
-  padding: 10px 15px;
+.nav-links a {
+  color: lightblue;
+  text-decoration: underline;
+  font-size: 1.2em; /* bumped up size */
   font-weight: bold;
-  cursor: pointer;
 }
 
 .main-image {
@@ -54,11 +52,12 @@ h1 {
 footer {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 footer a {
   color: lightblue;
   text-decoration: underline;
+  font-size: 1.2em; /* bumped up size */
   font-weight: bold;
 }
