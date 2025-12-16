@@ -38,8 +38,9 @@ h1 {
 .nav-links a {
   color: lightblue;
   text-decoration: underline;
-  font-size: 1.2em; /* bumped up size */
+  font-size: 1.2em;
   font-weight: bold;
+  transition: all 0.3s ease; /* smooth hover effect */
 }
 
 .main-image {
@@ -58,6 +59,14 @@ footer {
 footer a {
   color: lightblue;
   text-decoration: underline;
-  font-size: 1.2em; /* bumped up size */
+  font-size: 1.2em;
   font-weight: bold;
+  transition: all 0.3s ease; /* smooth hover effect */
+}
+
+/* ✨ Hover Glow Effect */
+.nav-links a:hover,
+footer a:hover {
+  color: white;
+  text-shadow: 0 0 10px lightblue, 0 0 20px cyan;
 }
