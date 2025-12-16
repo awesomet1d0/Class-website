@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: black;
-  color: lightblue;
+  color: white; /* all text except title is white */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -24,8 +24,9 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 2.8em; /* slightly larger */
-  color: lightblue;
+  font-size: 3.6em; /* 1.3x larger than before */
+  font-weight: bolder; /* stronger boldness */
+  color: lightblue; /* title stays lightblue */
 }
 
 .nav-links {
@@ -36,11 +37,11 @@ h1 {
 }
 
 .nav-links a {
-  color: lightblue;
+  color: darkblue; /* links are dark blue */
   text-decoration: underline;
   font-size: 1.2em;
   font-weight: bold;
-  transition: all 0.3s ease; /* smooth hover effect */
+  transition: all 0.3s ease;
 }
 
 .main-image {
@@ -57,11 +58,11 @@ footer {
 }
 
 footer a {
-  color: lightblue;
+  color: darkblue; /* footer links also dark blue */
   text-decoration: underline;
   font-size: 1.2em;
   font-weight: bold;
-  transition: all 0.3s ease; /* smooth hover effect */
+  transition: all 0.3s ease;
 }
 
 /* ✨ Hover Glow Effect */
