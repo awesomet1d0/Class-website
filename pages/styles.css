@@ -24,8 +24,8 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 3.6em; /* 1.3x larger than before */
-  font-weight: bolder; /* stronger boldness */
+  font-size: 3.6em; /* 1.3x larger */
+  font-weight: bolder;
   color: lightblue; /* title stays lightblue */
 }
 
@@ -65,9 +65,41 @@ footer a {
   transition: all 0.3s ease;
 }
 
-/* ✨ Hover Glow Effect */
+/* ✨ Hover Glow Effect for links */
 .nav-links a:hover,
 footer a:hover {
+  color: white;
+  text-shadow: 0 0 10px lightblue, 0 0 20px cyan;
+}
+
+/* Contact Page Box */
+.contact-box {
+  background-color: grey;
+  color: white;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.3em;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Hover Glow Effect for Back Button */
+.back-button:hover {
+  background-color: darkblue;
   color: white;
   text-shadow: 0 0 10px lightblue, 0 0 20px cyan;
 }
