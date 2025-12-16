@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: lightblue;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.title-box {
+  background-color: black;
+  border: 2px solid lightblue;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: lightblue;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dropdown button {
+  background-color: lightblue;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid lightblue;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer a {
+  color: lightblue;
+  text-decoration: underline;
+  font-weight: bold;
+}
