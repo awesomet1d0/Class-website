@@ -5,64 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Free to Play Games</title>
   <link rel="stylesheet" href="styles.css" />
-<style>
-  /* 🌈 Rainbow background for the whole page */
-  body {
-    margin: 0;
-    background: linear-gradient(
-      135deg,
-      red,
-      orange,
-      yellow,
-      green,
-      cyan,
-      blue,
-      violet
-    );
-    background-size: 400% 400%;
-    animation: rainbowShift 12s ease infinite;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
+ <style>
+    /* Hard-coded table styles for this page */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px auto;
+      background-color: black;
+      color: white;
+      font-size: 1.1em;
+    }
+    th, td {
+      border: 2px solid #D2B48C; /* tan border to match theme */
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+      color: yellow;
+      font-weight: bold;
+    }
+    tr:hover {
+      background-color: #222;
+      text-shadow: 0 0 10px yellow, 0 0 20px gold;
+    }
+  </style>
 
-  @keyframes rainbowShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  /* Table styling */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 30px auto;
-    background-color: rgba(0, 0, 0, 0.7); /* transparent black so rainbow shows behind */
-    color: white;
-    font-size: 1.1em;
-  }
-  th, td {
-    border: 2px solid #D2B48C;
-    padding: 12px;
-    text-align: center;
-  }
-  th {
-    background-color: #333;
-    color: yellow;
-    font-weight: bold;
-  }
-  tr:hover {
-    background-color: #222;
-    text-shadow: 0 0 10px yellow, 0 0 20px gold;
-  }
-
-  .logo-top {
-    display: block;
-    margin: 20px auto;
-    height: 80px;
-    width: auto;
-  }
-</style>
 </head>
 <body>
   <div class="container">
