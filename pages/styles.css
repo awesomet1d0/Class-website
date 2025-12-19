@@ -1,50 +1,139 @@
-/* Dropdown Menu */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropbtn {
-  background-color: yellow;
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.dropbtn:hover {
-  background-color: gold;
-  text-shadow: 0 0 10px yellow, 0 0 20px orange;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
+/* Base layout */
+body {
+  margin: 0;
   background-color: black;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-  z-index: 1;
-  border-radius: 5px;
+  color: white; /* all text except title is white */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.dropdown-content a {
-  color: yellow;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Title area with logo */
+.title-box {
+  background-color: black;
+  border: 2px solid #D2B48C; /* tan border to match title */
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;              /* title + logo side by side */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.6em;           /* ~1.3x larger */
+  font-weight: bolder;
+  color: #D2B48C;             /* tanner yellow (tan) */
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.nav-links a {
+  color: yellow;              /* links are yellow */
+  text-decoration: underline;
+  font-size: 1.2em;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
-.dropdown-content a:hover {
-  background-color: darkblue;
+/* Main image */
+.main-image {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #D2B48C;  /* match title color */
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;     /* stack about/contact then button below */
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  color: yellow;              /* footer links are yellow */
+  text-decoration: underline;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Link hover glow */
+.nav-links a:hover,
+footer a:hover {
   color: white;
   text-shadow: 0 0 10px yellow, 0 0 20px gold;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Random Game button */
+.random-game-wrapper {
+  margin-top: 15px;           /* slightly lower than about/contact */
+}
+
+.random-game-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;               /* readable against yellow */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.random-game-button:hover {
+  background-color: gold;
+  text-shadow: 0 0 10px yellow, 0 0 20px orange;
+}
+
+/* Contact page elements (if using external stylesheet there) */
+.contact-box {
+  background-color: grey;
+  color: white;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.3em;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: darkblue;
+  color: white;
+  text-shadow: 0 0 10px yellow, 0 0 20px gold;
 }
