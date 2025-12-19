@@ -5,18 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Game Reviews</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Hard-coded dropdown styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .dropbtn:hover {
+      background-color: gold;
+      text-shadow: 0 0 10px yellow, 0 0 20px orange;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+      z-index: 1;
+      border-radius: 5px;
+    }
+    .dropdown-content a {
+      color: yellow;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background-color: darkblue;
+      color: white;
+      text-shadow: 0 0 10px yellow, 0 0 20px gold;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <!-- ✅ Logo moved to top -->
+      <!-- ✅ Logo at top -->
       <img src="../pics/logo.jpg" alt="Site Logo" class="logo-top">
 
       <div class="title-box">
         <h1>Game reviews</h1>
       </div>
       <nav class="nav-links">
-        <a href="#categories">Categories</a>
+        <!-- ✅ Dropdown menu for Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="#low">Low Price</a>
+            <a href="#med">Med Price</a>
+            <a href="#high">High Price</a>
+          </div>
+        </div>
         <a href="#favorites">Favorites</a>
       </nav>
     </header>
