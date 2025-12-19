@@ -17,16 +17,20 @@ body {
 
 .title-box {
   background-color: black;
-  border: 2px solid lightblue;
+  border: 2px solid tan; /* border matches tanner yellow vibe */
   padding: 20px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 h1 {
   margin: 0;
   font-size: 3.6em; /* 1.3x larger */
   font-weight: bolder;
-  color: lightblue; /* title stays lightblue */
+  color: #D2B48C; /* Tanner yellow (tan shade) */
 }
 
 .nav-links {
@@ -37,7 +41,7 @@ h1 {
 }
 
 .nav-links a {
-  color: darkblue; /* links are dark blue */
+  color: yellow; /* links are yellow */
   text-decoration: underline;
   font-size: 1.2em;
   font-weight: bold;
@@ -47,7 +51,7 @@ h1 {
 .main-image {
   width: 100%;
   max-width: 600px;
-  border: 2px solid yellow;
+  border: 2px solid #D2B48C; /* border matches title color */
   margin-bottom: 30px;
 }
 
@@ -59,7 +63,7 @@ footer {
 }
 
 footer a {
-  color: darkblue; /* footer links also dark blue */
+  color: yellow; /* footer links also yellow */
   text-decoration: underline;
   font-size: 1.2em;
   font-weight: bold;
@@ -70,19 +74,19 @@ footer a {
 .nav-links a:hover,
 footer a:hover {
   color: white;
-  text-shadow: 0 0 10px lightblue, 0 0 20px cyan;
+  text-shadow: 0 0 10px yellow, 0 0 20px gold;
 }
 
 /* Random Game Button */
 .random-game-wrapper {
-  margin-top: 15px; /* pushes it below About/Contact */
+  margin-top: 15px;
 }
 
 .random-game-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: blue;
-  color: white;
+  background-color: yellow;
+  color: black; /* contrast text */
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -91,6 +95,6 @@ footer a:hover {
 
 /* Hover Glow Effect for Random Game Button */
 .random-game-button:hover {
-  background-color: darkblue;
-  text-shadow: 0 0 10px lightblue, 0 0 20px cyan;
+  background-color: gold;
+  text-shadow: 0 0 10px yellow, 0 0 20px orange;
 }
