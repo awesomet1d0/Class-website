@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REALLY?!?!</title>
+
+  <style>
+    /* 🌈 Full rainbow animated background */
+    body {
+      margin: 0;
+      background: linear-gradient(
+        135deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+      );
+      background-size: 400% 400%;
+      animation: rainbowShift 10s ease infinite;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes rainbowShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      margin-top: 40px;
+      text-shadow: 0 0 10px black;
+    }
+
+    /* ✅ Numbered list styling */
+    ol {
+      font-size: 1.4em;
+      margin: 40px auto;
+      max-width: 600px;
+      text-align: left;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid yellow;
+    }
+
+    /* ✅ Color-changing BACK button */
+    .back-btn {
+      margin-top: auto;
+      margin-bottom: 40px;
+      padding: 15px 30px;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      color: black;
+      background: linear-gradient(45deg, yellow, orange, red, purple, blue, green);
+      background-size: 400% 400%;
+      animation: colorCycle 5s infinite;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    @keyframes colorCycle {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .back-btn:hover {
+      transform: scale(1.1);
+      text-shadow: 0 0 10px white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>You really clicked back to home?</h1>
+
+  <ol>
+    <h2>Reasons You Didnt need to press that.</h2>
+    <li>You were on the home page</li>
+    <li> You didnt need to go back to home</li>
+    <li> This is a secret page</li>
+    <li> You must like pressing buttons</li>
+  </ol>
+
+  <!-- ✅ Color-changing back button -->
+  <a href="index.html" class="back-btn">BACK</a>
+
+</body>
+</html>
