@@ -46,8 +46,22 @@
       height: 80px;
       width: auto;
     }
+
+    /* ✅ Blue glow on image hover */
+    table img {
+      width: 150px;
+      height: auto;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    table img:hover {
+      box-shadow: 0 0 15px #00aaff, 0 0 30px #00aaff;
+      transform: scale(1.05);
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -60,31 +74,56 @@
     <main>
       <table>
         <tr>
-          <th>  Images </th>
+          <th>Images</th>
           <th>Game & Price</th>
           <th>Where to Play / Online Services</th>
           <th>Review</th>
         </tr>
-      <tr>
-        <td>  <img src="../pics/gentleman.jpg/">  </td>
-          <td> A Gentlemen's Dispute ($7.99) (8/10)</td>
-          <td> Steam 
+
+        <tr>
+          <td>
+            <!-- ✅ Clickable image button -->
+            <a href="" target="_blank">
+              <img src="../pics/gentleman.jpg" alt="A Gentlemen's Dispute">
+            </a>
           </td>
-          <td> This game is a Great game to play with your friends. You play as a gentleman in part of a dispute. Gaining wacky powers to help you use diffrent weapons and Items to dispute the other gentleman. Throw Bombs, Set beartraps, and even fly a plan to fight your fellow gentleman. I love this game and the mess that it is. </td>
+          <td>A Gentlemen's Dispute ($7.99) (8/10)</td>
+          <td>Steam</td>
+          <td>
+            This game is a great game to play with your friends...
+          </td>
         </tr>
+
         <tr>
-            <td>  <img src="../pics/peggle.jpg/">  </td>
-          <td> Peggle Deluxe ($4.99) (10/10)</td>
-          <td> Steam </td></td>
-          <td> Well its peggle. Not much to say about it. You shoot the ball try to hit the orange pegs and clear the level. YOU WILL BECOME A PEGGLE MASTER. I used to talk about this game as a joke but this game is amazing. Its on so many platforms with diffrent versions and every version is great. You pay for much less then you should for this old classic. </td>
+          <td>
+            <!-- ✅ Clickable image button -->
+            <a href="" target="_blank">
+              <img src="../pics/peggle.jpg" alt="Peggle Deluxe">
+            </a>
+          </td>
+          <td>Peggle Deluxe ($4.99) (10/10)</td>
+          <td>Steam</td>
+          <td>
+            Well it's Peggle. Not much to say about it...
+          </td>
         </tr>
+
         <tr>
-            <td>  <img src="../pics/terraia.jpg/">  </td>
-          <td>Terraria ($9-$20) (9/10) </td>
-          <td> Moblie / Nintendo 3DS / Nintendo Switch / Nintendo Wii U / Xbox 360 / Xbox One / PS4 / PS3 / PS5 / Steam / More </td>
-          <td> This game is a classic. A game where you fight bosses, gear up, Grind for gear, build massive structures, Show off you skills, fight other player, Or just explore. There is so much to do in this masterpeice of a game. It might not look the best to you with its 2D graphics and it doesn't hold you hand but it is a masterpeice. It was supposed to get a final update forever ago but now its still getting updated. With new collabs like Palworld and much more. This is one of the must have games, And when you get bored of the base game the modded community has you covered. The community for this game is one of the strongest and most helpful. Try it out.</td>
+          <td>
+            <!-- ✅ Clickable image button -->
+            <a href="" target="_blank">
+              <img src="../pics/terraia.jpg" alt="Terraria">
+            </a>
+          </td>
+          <td>Terraria ($9–$20) (9/10)</td>
+          <td>
+            Mobile / Nintendo 3DS / Nintendo Switch / Nintendo Wii U / Xbox 360 / Xbox One / PS4 / PS3 / PS5 / Steam / More
+          </td>
+          <td>
+            This game is a classic. A game where you fight bosses, gear up, grind for gear...
+          </td>
         </tr>
-        <!-- ✅ Add your low‑price games here -->
+
       </table>
     </main>
 
