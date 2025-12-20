@@ -55,7 +55,59 @@
       text-shadow: 0 0 10px yellow, 0 0 20px gold;
     }
 
-    /* ✅ Footer (Back to Home only) */
+    /* ✅ Contact form styling */
+    .form-box {
+      background-color: #222;
+      padding: 25px;
+      margin: 40px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      border: 2px solid yellow;
+      text-align: left;
+    }
+
+    .form-box label {
+      font-weight: bold;
+      color: yellow;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    .form-box input,
+    .form-box textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    .form-box textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .submit-btn {
+      background-color: yellow;
+      color: black;
+      padding: 12px 25px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: gold;
+      text-shadow: 0 0 10px yellow, 0 0 20px gold;
+      transform: scale(1.05);
+    }
+
+    /* ✅ Footer */
     footer {
       padding: 20px;
       margin-top: auto;
@@ -87,6 +139,23 @@
     <a href="https://steamcommunity.com/profiles/76561198886622696/"
        target="_blank"
        class="steam-link">My Steam Profile</a>
+
+    <!-- ✅ New Contact Form -->
+    <div class="form-box">
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Write your message here"></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
   </div>
 
   <footer>
